@@ -32,14 +32,35 @@
       "style": "css",
       "linter": "eslint",
       "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
+      "e2eTestRunner": "cypress",
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "skipTests": true
     },
     "@nrwl/angular:library": {
       "linter": "eslint",
       "unitTestRunner": "jest"
     },
     "@nrwl/angular:component": {
-      "style": "css"
+      "style": "css",
+      "changeDetection": "OnPush",
+      "displayBlock": true,
+      "flat": true,
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "skipTests": true,
+      "standalone": true
+    },
+    "@schematics/angular:directive": {
+      "skipTests": true,
+      "standalone": true
+    },
+    "@schematics/angular:pipe": {
+      "skipTests": true,
+      "standalone": true
+    },
+    "@schematics/angular:service": {
+      "skipTests": true
     }
   },
   "defaultProject": "tour-of-heroes-app"
