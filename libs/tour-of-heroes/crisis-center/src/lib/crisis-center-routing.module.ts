@@ -6,7 +6,7 @@ import { CrisisCenterHomeComponent } from './crisis-center-home/crisis-center-ho
 import { CrisisCenterComponent } from './crisis-center/crisis-center.component';
 import { CrisisDetailResolverService } from './crisis-detail-resolver.service';
 import { CrisisDetailComponent } from './crisis-detail/crisis-detail.component';
-import { CrisisListComponent } from './crisis-list/crisis-list.component';
+import { CrisisListComponent } from './crisis-list.component';
 
 const crisisCenterRoutes: Routes = [
   {
