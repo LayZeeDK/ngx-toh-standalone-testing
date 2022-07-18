@@ -43,7 +43,6 @@
     },
     "@nrwl/angular:component": {
       "style": "css",
-      "displayBlock": true,
       "flat": true,
       "inlineStyle": true,
       "inlineTemplate": true,
