@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "tour-of-heroes-app": "apps/tour-of-heroes-app",
-    "tour-of-heroes-app-e2e": "apps/tour-of-heroes-app-e2e"
+    "tour-of-heroes-app-e2e": "apps/tour-of-heroes-app-e2e",
+    "tour-of-heroes-crisis-center": "libs/tour-of-heroes/crisis-center"
   }
 }

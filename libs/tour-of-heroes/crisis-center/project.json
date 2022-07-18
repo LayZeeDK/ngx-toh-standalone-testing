@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/tour-of-heroes/crisis-center/src",
+  "prefix": "toh",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/tour-of-heroes/crisis-center"],
+      "options": {
+        "jestConfig": "libs/tour-of-heroes/crisis-center/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/tour-of-heroes/crisis-center/**/*.ts",
+          "libs/tour-of-heroes/crisis-center/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
