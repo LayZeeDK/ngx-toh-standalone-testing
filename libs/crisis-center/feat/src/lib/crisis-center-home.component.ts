@@ -7,4 +7,4 @@ import { Component } from '@angular/core';
   template: `<p>Welcome to the Crisis Center</p>`,
   styles: [],
 })
-export class CrisisCenterHomeComponent {}
+export class CrisisCenterFeatHomeComponent {}

@@ -1,14 +1,14 @@
 {
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "sourceRoot": "libs/crisis-center/src",
+  "sourceRoot": "libs/crisis-center/feat/src",
   "prefix": "toh",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/crisis-center"],
+      "outputs": ["coverage/libs/crisis-center/feat"],
       "options": {
-        "jestConfig": "libs/crisis-center/jest.config.ts",
+        "jestConfig": "libs/crisis-center/feat/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -16,8 +16,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/crisis-center/**/*.ts",
-          "libs/crisis-center/**/*.html"
+          "libs/crisis-center/feat/**/*.ts",
+          "libs/crisis-center/feat/**/*.html"
         ]
       }
     }

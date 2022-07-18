@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "crisis-center": "libs/crisis-center",
+    "crisis-center-feat": "libs/crisis-center/feat",
     "tour-of-heroes-app": "apps/tour-of-heroes-app",
     "tour-of-heroes-app-e2e": "apps/tour-of-heroes-app-e2e"
   }

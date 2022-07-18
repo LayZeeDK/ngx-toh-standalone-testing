@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { crisisCenterPath } from '@tour-of-heroes/crisis-center';
+import { crisisCenterPath } from '@tour-of-heroes/crisis-center/feat';
 import { ComposeMessageComponent } from './compose-message.component';
 import { PageNotFoundComponent } from './page-not-found.component';
 
@@ -12,7 +12,7 @@ export const appRoutes: Routes = [
   {
     path: crisisCenterPath,
     loadChildren: () =>
-      import('@tour-of-heroes/crisis-center').then(
+      import('@tour-of-heroes/crisis-center/feat').then(
         (esModule) => esModule.crisisCenterRoutes
       ),
     data: { preload: true },
