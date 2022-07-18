@@ -43,7 +43,6 @@
     },
     "@nrwl/angular:component": {
       "style": "css",
-      "changeDetection": "OnPush",
       "displayBlock": true,
       "flat": true,
       "inlineStyle": true,
