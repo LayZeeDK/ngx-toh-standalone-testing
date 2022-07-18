@@ -6,7 +6,7 @@ import { Crisis } from '../crisis';
 import { DialogService } from '../dialog.service';
 
 @Component({
-  selector: 'app-crisis-detail',
+  selector: 'toh-crisis-detail',
   templateUrl: './crisis-detail.component.html',
   styleUrls: ['./crisis-detail.component.css'],
 })
@@ -24,7 +24,7 @@ export class CrisisDetailComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.route.data.subscribe(data => {
+    this.route.data.subscribe((data) => {
       const crisis: Crisis = data.crisis;
       this.editName = crisis.name;
       this.crisis = crisis;

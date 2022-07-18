@@ -7,13 +7,13 @@ import { Crisis } from '../crisis';
 import { CrisisService } from '../crisis.service';
 
 @Component({
-  selector: 'app-crisis-list',
+  selector: 'toh-crisis-list',
   templateUrl: './crisis-list.component.html',
   styleUrls: ['./crisis-list.component.css'],
 })
 export class CrisisListComponent {
   crises$: Observable<Crisis[]> = this.route.paramMap.pipe(
-    switchMap(params => {
+    switchMap((params) => {
       this.selectedId = +(params.get('id') ?? '-1');
       return this.service.getCrises();
     })
