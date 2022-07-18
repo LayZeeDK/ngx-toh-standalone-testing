@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "tour-of-heroes-app": "apps/tour-of-heroes-app",
+    "tour-of-heroes-app-e2e": "apps/tour-of-heroes-app-e2e"
+  }
+}
