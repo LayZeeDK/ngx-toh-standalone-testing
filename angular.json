@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "crisis-center-feat": "libs/crisis-center/feat",
+    "crisis-center-routing": "libs/crisis-center/routing",
     "tour-of-heroes-app": "apps/tour-of-heroes-app",
     "tour-of-heroes-app-e2e": "apps/tour-of-heroes-app-e2e"
   }

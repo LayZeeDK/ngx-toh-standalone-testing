@@ -11,4 +11,4 @@ import { RouterModule } from '@angular/router';
   `,
   styles: [],
 })
-export class CrisisCenterFeatComponent {}
+export class CrisisCenterComponent {}
