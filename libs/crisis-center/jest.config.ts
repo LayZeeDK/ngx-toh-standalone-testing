@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'tour-of-heroes-crisis-center',
-  preset: '../../../jest.preset.js',
+  displayName: 'crisis-center',
+  preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/tour-of-heroes/crisis-center',
+  coverageDirectory: '../../coverage/libs/crisis-center',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

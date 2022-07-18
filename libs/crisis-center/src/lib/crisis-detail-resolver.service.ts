@@ -19,7 +19,7 @@ export class CrisisDetailResolverService implements Resolve<Crisis> {
 
     return this.cs.getCrisis(id).pipe(
       take(1),
-      mergeMap(crisis => {
+      mergeMap((crisis) => {
         if (crisis) {
           return of(crisis);
         } else {

@@ -1,13 +1,14 @@
 {
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "sourceRoot": "libs/tour-of-heroes/crisis-center/src",
+  "sourceRoot": "libs/crisis-center/src",
   "prefix": "toh",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/tour-of-heroes/crisis-center"],
+      "outputs": ["coverage/libs/crisis-center"],
       "options": {
-        "jestConfig": "libs/tour-of-heroes/crisis-center/jest.config.ts",
+        "jestConfig": "libs/crisis-center/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -15,8 +16,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/tour-of-heroes/crisis-center/**/*.ts",
-          "libs/tour-of-heroes/crisis-center/**/*.html"
+          "libs/crisis-center/**/*.ts",
+          "libs/crisis-center/**/*.html"
         ]
       }
     }

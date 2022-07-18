@@ -15,9 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tour-of-heroes/tour-of-heroes/crisis-center": [
-        "libs/tour-of-heroes/crisis-center/src/index.ts"
-      ]
+      "@tour-of-heroes/crisis-center": ["libs/crisis-center/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
