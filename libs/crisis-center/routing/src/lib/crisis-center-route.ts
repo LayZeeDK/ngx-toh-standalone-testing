@@ -1,4 +1,5 @@
 import { Route } from '@angular/router';
+
 import { crisisCenterPath } from './crisis-center-path';
 
 export const crisisCenterRoute: Route = {
