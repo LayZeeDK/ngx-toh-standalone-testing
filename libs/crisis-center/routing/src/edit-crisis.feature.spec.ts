@@ -39,7 +39,7 @@ const setup = async () => {
   };
 };
 
-it('from crisis detail', async () => {
+it('edit crisis from crisis detail', async () => {
   const { location, router, user } = await setup();
   const crisisId = 2;
   await router.navigate([crisisCenterPath, crisisId]);
@@ -54,7 +54,7 @@ it('from crisis detail', async () => {
   expect(location.path()).toBe(`/${crisisCenterPath};id=${crisisId};foo=foo`);
 });
 
-it('from crisis center home', async () => {
+it('edit crisis from crisis center home', async () => {
   const { router, user } = await setup();
   await router.navigateByUrl(`/${crisisCenterPath}`);
 
