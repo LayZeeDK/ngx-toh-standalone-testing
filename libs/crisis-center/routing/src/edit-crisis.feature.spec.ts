@@ -21,6 +21,7 @@ const findSelectedCrisis = (name: Matcher) =>
 
 const setup = async () => {
   const user = userEvent.setup();
+
   const {
     fixture: {
       debugElement: { injector },
@@ -29,6 +30,7 @@ const setup = async () => {
     excludeComponentDeclaration: true,
     routes: [crisisCenterRoute],
   });
+
   return {
     location: injector.get(Location),
     router: injector.get(Router),
