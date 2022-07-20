@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, Router } from '@angular/router';
-import { EMPTY, Observable, of } from 'rxjs';
-import { mergeMap, take } from 'rxjs/operators';
+import { EMPTY, mergeMap, Observable, of, take } from 'rxjs';
 
 import { Crisis } from './crisis';
 import { CrisisService } from './crisis.service';

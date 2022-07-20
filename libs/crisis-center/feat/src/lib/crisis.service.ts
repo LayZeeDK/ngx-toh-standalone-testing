@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { BehaviorSubject, map } from 'rxjs';
 
 import { Crisis } from './crisis';
 import { MessageService } from './message.service';

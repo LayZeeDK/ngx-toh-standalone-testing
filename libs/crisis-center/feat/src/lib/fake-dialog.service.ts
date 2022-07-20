@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
-import { take } from 'rxjs/operators';
+import { Observable, Subject, take } from 'rxjs';
 
 import { DialogService } from './dialog.service';
 
