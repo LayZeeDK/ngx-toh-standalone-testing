@@ -1,4 +1,4 @@
-# Testing the Tour of Heroes tutorial - Standalone Angular application version
+# Testing the Tour of Heroes tutorial - Standalone Angular application edition
 
 The Tour of Heroes Angular tutorial converted to a standalone Angular application in an [Nx](https://nx.dev) workspace.
 
