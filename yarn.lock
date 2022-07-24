@@ -227,13 +227,6 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/forms@~11.0.9":
-  version "11.0.9"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-11.0.9.tgz#c7238af3d42e75f436840f5cf3002cbd41811d84"
-  integrity sha512-DHi4puesP5iSBToT4FZVqLYZZpZDlAy2wgBe+OhCq7GCIqi8OLejB3bp9BnUd/WnNAHJd3zEjytexih6EPE0Xg==
-  dependencies:
-    tslib "^2.0.0"
-
 "@angular/forms@~14.0.0":
   version "14.0.6"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-14.0.6.tgz#87aa36b1a3f3bd1ca71615fd250f04f8e660971c"
@@ -1824,13 +1817,12 @@
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-14.0.6.tgz#a48185b584a528a59ce82217830673268ceee8c2"
   integrity sha512-mSmLqzRKxQgGiOhvJ8guvRLjXoTL17cVSWlL/Cz+Q3xc1bXa7537ZXBTQTEuZVU2ytdkniKc8l1HqXIx0pFNVQ==
 
-"@ngworker/spectacular@~0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@ngworker/spectacular/-/spectacular-0.3.0.tgz#47192f62626c9a9bd84361e28878872a9aac1205"
-  integrity sha512-mblYfLpZSAcZv7coDTWhb2qXPgXv4mkpAb7hoaW87KL8IiwEDhgt6BFZDhB7CDbuNakox6lswa/nR0aKLKQqBQ==
+"@ngworker/spectacular@~0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@ngworker/spectacular/-/spectacular-0.5.0.tgz#3b462f014e3daf06dc2ba4a4fd7d2c82a1097cce"
+  integrity sha512-FjPx5t/Bv6RLvfBur6uoY+AQvLGyT6OwESKRzxZEpnw1rmShYi7M7q0RG7nkz/2bjwrlTLWqKxVhaTKXLPJ2qQ==
   dependencies:
-    "@angular/forms" "~11.0.9"
-    tslib "^2.0.0"
+    tslib "^2.1.0"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -2361,10 +2353,10 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/user-event@^14.2.6":
-  version "14.2.6"
-  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-14.2.6.tgz#9ba313a212994eea66e018520e23542ac3eb6fbe"
-  integrity sha512-l/4W4x3Lm24wkWNkPasXqvEzG+a6n2X872XCUjhyfbNqcoOapaWyCxC5Fz+E4r7JPu8gysQKSSCrK0OO2x+D+A==
+"@testing-library/user-event@^14.3.0":
+  version "14.3.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-14.3.0.tgz#0a6750b94b40e4739706d41e8efc2ccf64d2aad9"
+  integrity sha512-P02xtBBa8yMaLhK8CzJCIns8rqwnF6FxhR9zs810flHOBXUYCFjLd8Io1rQrAkQRWEmW2PGdZIEdMxf/KLsqFA==
 
 "@tootallnate/once@1":
   version "1.1.2"

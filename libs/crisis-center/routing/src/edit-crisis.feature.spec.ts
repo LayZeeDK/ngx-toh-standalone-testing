@@ -1,6 +1,9 @@
-import { Location } from '@angular/common';
-import { Router } from '@angular/router';
-import { SpectacularAppComponent } from '@ngworker/spectacular';
+import {
+  provideSpectacularFeatureTest,
+  SpectacularAppComponent,
+  SpectacularFeatureLocation,
+  SpectacularFeatureRouter
+} from '@ngworker/spectacular';
 import { render, screen } from '@testing-library/angular';
 import { Matcher } from '@testing-library/dom';
 import userEvent from '@testing-library/user-event';
@@ -30,19 +33,22 @@ const setup = async () => {
   } = await render(SpectacularAppComponent, {
     excludeComponentDeclaration: true,
     routes: [crisisCenterRoute],
+    providers: [
+      provideSpectacularFeatureTest({ featurePath: crisisCenterPath }),
+    ],
   });
 
   return {
-    location: injector.get(Location),
-    router: injector.get(Router),
+    location: injector.get(SpectacularFeatureLocation),
+    router: injector.get(SpectacularFeatureRouter),
     user,
   };
 };
 
-it('edit crisis from crisis detail', async () => {
+it('Edit crisis from crisis detail', async () => {
   const { location, router, user } = await setup();
   const crisisId = 2;
-  await router.navigate([crisisCenterPath, crisisId]);
+  await router.navigate(['~', crisisId]);
 
   await user.clear(await findNameControl());
   await user.type(await findNameControl(), 'The global temperature is rising');
@@ -51,12 +57,12 @@ it('edit crisis from crisis detail', async () => {
   expect(
     await findSelectedCrisis(/the global temperature is rising/i)
   ).toBeInTheDocument();
-  expect(location.path()).toBe(`/${crisisCenterPath};id=${crisisId};foo=foo`);
+  expect(location.path()).toBe(`~/;id=${crisisId};foo=foo`);
 });
 
-it('edit crisis from crisis center home', async () => {
+it('Edit crisis from crisis center home', async () => {
   const { router, user } = await setup();
-  await router.navigateByUrl(`/${crisisCenterPath}`);
+  await router.navigateByUrl('~/');
 
   await user.click(
     await findCrisisLink(/procrastinators meeting delayed again/i)
