@@ -2,7 +2,7 @@ import {
   provideSpectacularFeatureTest,
   SpectacularAppComponent,
   SpectacularFeatureLocation,
-  SpectacularFeatureRouter
+  SpectacularFeatureRouter,
 } from '@ngworker/spectacular';
 import { render, screen } from '@testing-library/angular';
 import { Matcher } from '@testing-library/dom';
@@ -31,11 +31,10 @@ const setup = async () => {
       debugElement: { injector },
     },
   } = await render(SpectacularAppComponent, {
-    excludeComponentDeclaration: true,
-    routes: [crisisCenterRoute],
     providers: [
       provideSpectacularFeatureTest({ featurePath: crisisCenterPath }),
     ],
+    routes: [crisisCenterRoute],
   });
 
   return {
