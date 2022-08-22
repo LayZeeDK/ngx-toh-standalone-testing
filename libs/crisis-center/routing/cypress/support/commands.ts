@@ -1,6 +1,8 @@
 import { Type } from '@angular/core';
 import { mount, MountConfig, MountResponse } from 'cypress/angular';
 
+import '@testing-library/cypress/add-commands';
+
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace Cypress {
