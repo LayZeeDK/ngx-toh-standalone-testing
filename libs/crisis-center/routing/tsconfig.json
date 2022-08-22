@@ -4,10 +4,16 @@
   "include": [],
   "references": [
     {
+      "path": "./tsconfig.cy.json"
+    },
+    {
       "path": "./tsconfig.lib.json"
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./tsconfig.editor.json"
     }
   ],
   "compilerOptions": {
