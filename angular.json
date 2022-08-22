@@ -74,7 +74,7 @@
             "outputPath": "dist/apps/tour-of-heroes-app",
             "index": "apps/tour-of-heroes-app/src/index.html",
             "main": "apps/tour-of-heroes-app/src/main.ts",
-            "polyfills": "apps/tour-of-heroes-app/src/polyfills.ts",
+            "polyfills": "",
             "tsConfig": "apps/tour-of-heroes-app/tsconfig.app.json",
             "assets": [
               "apps/tour-of-heroes-app/src/favicon.ico",
