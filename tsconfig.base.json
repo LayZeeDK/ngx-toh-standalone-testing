@@ -15,11 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tour-of-heroes/crisis-center/routing": [
-        "libs/crisis-center/routing/src/index.ts"
-      ],
       "@tour-of-heroes/crisis-center/feat": [
         "libs/crisis-center/feat/src/index.ts"
+      ],
+      "@tour-of-heroes/crisis-center/routing": [
+        "libs/crisis-center/routing/src/index.ts"
       ]
     }
   },
