@@ -50,6 +50,13 @@
               "libs/crisis-center/routing/**/*.html"
             ]
           }
+        },
+        "component-test": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "libs/crisis-center/routing/cypress.config.ts",
+            "testingType": "component"
+          }
         }
       },
       "tags": []
