@@ -6,8 +6,9 @@
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/tour-of-heroes-app-e2e/cypress.json",
-        "devServerTarget": "tour-of-heroes-app:serve:development"
+        "cypressConfig": "apps/tour-of-heroes-app-e2e/cypress.config.ts",
+        "devServerTarget": "tour-of-heroes-app:serve:development",
+        "testingType": "e2e"
       },
       "configurations": {
         "production": {
