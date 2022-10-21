@@ -2,6 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import {
+  provideLocalRouterStore,
+  RouterStore,
+} from '@ngworker/router-component-store';
 import { Observable } from 'rxjs';
 
 import { Crisis } from './crisis';
@@ -32,6 +36,7 @@ import { DialogService } from './dialog.service';
       }
     `,
   ],
+  providers: [provideLocalRouterStore()],
 })
 export class CrisisDetailComponent implements OnInit {
   crisis: Crisis = {
@@ -43,11 +48,12 @@ export class CrisisDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    public dialogService: DialogService
+    public dialogService: DialogService,
+    private routerStore: RouterStore
   ) {}
 
   ngOnInit() {
-    this.route.data.subscribe((data) => {
+    this.routerStore.routeData$.subscribe((data) => {
       const crisis: Crisis = data['crisis'];
       this.editName = crisis.name;
       this.crisis = crisis;

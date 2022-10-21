@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { RouterStore } from '@ngworker/router-component-store';
 import { Observable, switchMap } from 'rxjs';
 
 import { Crisis } from './crisis';
@@ -109,13 +110,18 @@ import { CrisisService } from './crisis.service';
   ],
 })
 export class CrisisListComponent {
-  crises$: Observable<Crisis[]> = this.route.paramMap.pipe(
-    switchMap((params) => {
-      this.selectedId = +(params.get('id') ?? '-1');
-      return this.service.getCrises();
-    })
-  );
+  crises$: Observable<Crisis[]> = this.routerStore
+    .selectRouteParam<string | null | undefined>('id')
+    .pipe(
+      switchMap((id) => {
+        this.selectedId = +(id ?? '-1');
+        return this.service.getCrises();
+      })
+    );
   selectedId = -1;
 
-  constructor(private service: CrisisService, private route: ActivatedRoute) {}
+  constructor(
+    private service: CrisisService,
+    private routerStore: RouterStore
+  ) {}
 }
