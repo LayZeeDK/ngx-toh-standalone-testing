@@ -1870,10 +1870,15 @@
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-14.1.3.tgz#5ab26ce86f3ccc358c1dde4f9186ea058379e4bc"
   integrity sha512-tP2aiWKezhOVcR/PhVHcxKohO4ShKrhD42wgbJPbcqHeenOv1Hf5nW1nyUviqeF8QbVmPdBPF/ZOB8hIq5o6sw==
 
-"@ngworker/router-component-store@~0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@ngworker/router-component-store/-/router-component-store-0.1.1.tgz#b5a938030ca9ec208fab6382c0c0a9bdf099de0e"
-  integrity sha512-leTu4aEoJeqdhC3O4EEcAdH+rLNj6566HxuNNfxa3w1EHhyqMmEtw8i2JCtBx6vzCMpaGwlVlPEGvzMjlAbE6Q==
+"@ngworker/router-component-store@file:./dist/ngworker-router-component-store-0.1.2-alpha.4.tgz":
+  version "0.1.2-alpha.4"
+  resolved "file:./dist/ngworker-router-component-store-0.1.2-alpha.4.tgz#b70598cd12b9b0668ab81f5aab7bf371494494e4"
+  dependencies:
+    tslib "^2.3.0"
+
+"@ngworker/router-component-store@file:./dist/ngworker-router-component-store-0.1.2-alpha.5.tgz":
+  version "0.1.2-alpha.5"
+  resolved "file:./dist/ngworker-router-component-store-0.1.2-alpha.5.tgz#0c9f9383a5888b2aaf0461c6d39ccd26bebe5c9f"
   dependencies:
     tslib "^2.3.0"
 
