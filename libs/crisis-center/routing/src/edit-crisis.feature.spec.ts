@@ -1,3 +1,4 @@
+import { provideGlobalRouterStore } from '@ngworker/router-component-store';
 import {
   provideSpectacularFeatureTest,
   SpectacularAppComponent,
@@ -33,6 +34,7 @@ const setup = async () => {
   } = await render(SpectacularAppComponent, {
     providers: [
       provideSpectacularFeatureTest({ featurePath: crisisCenterPath }),
+      provideGlobalRouterStore(),
     ],
     routes: [crisisCenterRoute],
   });
